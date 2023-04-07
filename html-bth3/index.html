@@ -1,0 +1,46 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>List Smartphone</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="customer.js"></script>
+</head>
+<body>
+<form id="add-customer">
+    <table>
+        <tr>
+            <td>FistName:</td>
+            <td><input type="text" id="firstName" name="fistName" placeholder="fistName"></td>
+        </tr>
+        <tr>
+            <td>LastName:</td>
+            <td><input type="text" id="lastName" name="lastName" placeholder="lastName"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="submit"  onclick="createCustomer()">Add</button></td>
+        </tr>
+    </table>
+</form>
+
+
+<h1>Customer List</h1>
+<table>
+    <thead>
+    <tr>
+        <td>Fist Name</td>
+        <td>Last Name</td>
+        <td>Action</td>
+    </tr>
+    </thead>
+    <tbody id="content">
+    </tbody>
+    <tbody id="find">
+    </tbody>
+</table>
+</body>
+</html>
